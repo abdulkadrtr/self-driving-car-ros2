@@ -1,0 +1,14 @@
+* Dataset 252 görselden oluştuğundan proje klasörüne yüklenmemiştir.
+* Dataset benim tarafımdan oluşturulumuş ve etiketlenmiştir. 
+* Etiketleme işlemi roboflow üzerinden yapılmıştır.
+* Datasete aşağıdaki linkten erişebilirsiniz;
+
+
+https://universe.roboflow.com/ytuyzfinal-a2ftj/yz_donem_proje
+
+
+* Dataset içerisinde 4 adet etiket türü bulunmaktadır.
+ > dur
+ > hiz-limit
+ > kirmizi-isik
+ > yesil-isik

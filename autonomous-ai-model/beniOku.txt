@@ -1,0 +1,6 @@
+* Bu dosya otonom sürüş için yapay sinir ağı eğitiminin kodlarını ve veri setini içerir.
+* manuel_surus_data.csv dosyasında manuel sürüş esnasında toplanan veriler bulunmaktadır.
+* Eğitim sonucunda oluşan model ` model.pth ` dosyasıdır.
+
+
+- Abdulkadir TÜRE

@@ -1,0 +1,6 @@
+* Bu klasör projenini görüntü işleme modeline ait bilgileri içerir.
+* Train kodları ` detection-train.ipynb ` dosyası içerisindedir.
+* Eğitim sonucunda oluşan model ` model.pt ` dosyasıdır.
+* Dataset için ` dataset-link.txt ` dosyasına bakabilirsiniz.
+
+- Abdulkadir TÜRE

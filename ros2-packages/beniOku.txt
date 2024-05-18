@@ -1,0 +1,13 @@
+* autonomous_controller paketi ` ros2 run autonomous_controller autonomous_controller `
+komutuyla çalıştırılabilir. Bu aracın otonom olarak hedefe doğru ilerlemesini sağlar.
+
+* webots_ros2_tesla paketi, orjinal webots_ros2_tesla paketinin uygun şekilde modifiye
+edilmiş halidir. 
+
+
+*** Çalıştırmadan önce;
+
+- Sisteminizde ROS2, webots simulasyonu ve webots_ros2 paketleri bulunduğundan emin olun.
+- ros2_ws/src dizinine 2 paketi de atıp ` colcon build ` ile paketleri derleyin.
+- ` ros2 launch webots_ros2_tesla robot_launch.py ` komutuyla simulasyon ortamını başlatın.
+- ` ros2 run autonomous_controller autonomous_controller ` komutuyla otonom sürüşü başlatın.
