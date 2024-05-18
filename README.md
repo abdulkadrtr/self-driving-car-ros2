@@ -33,3 +33,9 @@ Transfer these packages into your working environment and compile them using `co
   From this point on, you can view feedback related to autonomous driving in the RVIZ2 window and the terminal screen. The vehicle will stop when it sees a red light and wait for it to turn green.
   If an obstacle appears, the vehicle will stop without hitting it and continue once the obstacle is removed.
   When the navigation reaches the main target, the autonomous driving speed will be set to zero, stopping the vehicle.
+
+## More
+
+- The `autonomous-ai-model` directory contains a dataset with manual driving data and a training file for the neural network model. You are free to use these files as needed.
+- In the `detection-model` directory, you can find the training codes for the YOLOv8 model, as well as the Roboflow link for the traffic lights dataset prepared for this project.
+  Feel free to utilize these resources accordingly.
