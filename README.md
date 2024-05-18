@@ -37,6 +37,11 @@ Transfer these packages into your working environment and compile them using `co
   If an obstacle appears, the vehicle will stop without hitting it and continue once the obstacle is removed.
   When the navigation reaches the main target, the autonomous driving speed will be set to zero, stopping the vehicle.
 
+- Three different GPS routes have been added for autonomous driving test.
+  You can track the autonomous driving of the vehicle on different routes by replacing the code line below with `path1`, `path2`, and `path3` respectively.
+
+  https://github.com/abdulkadrtr/self-driving-car-ros2/blob/44907a0afea1c2cd980fb15e2d1e210d733d41ae/ros2-packages/autonomous_controller/autonomous_controller/autonomous_controller.py#L16
+
 ## More
 
 - The `autonomous-ai-model` directory contains a dataset with manual driving data and a training file for the neural network model. You are free to use these files as needed.
