@@ -1,5 +1,7 @@
 ## Self Driving Car Project
 
+![yz-proje-final](https://github.com/abdulkadrtr/self-driving-car-ros2/assets/87595266/1473a43b-d1fa-426f-aeba-69c99c8a5eae)
+
 This project involves a self-driving car that learns from manual driving data using an artificial neural network model. A route consisting of GPS waypoints is defined for the vehicle, 
 and it follows this route using the neural network model. If an obstacle appears while the vehicle is progressing, the neural network model stops the vehicle. Red traffic lights are 
 detected using the YOLOv8 model and reported to the neural network, which then stops the vehicle and waits for a green light. The neural network model dynamically makes decisions 
@@ -29,7 +31,8 @@ Transfer these packages into your working environment and compile them using `co
 - Next, start the autonomous driving by running the command:
   
   `ros2 run autonomous_controller autonomous_controller`
-  
+
+
   From this point on, you can view feedback related to autonomous driving in the RVIZ2 window and the terminal screen. The vehicle will stop when it sees a red light and wait for it to turn green.
   If an obstacle appears, the vehicle will stop without hitting it and continue once the obstacle is removed.
   When the navigation reaches the main target, the autonomous driving speed will be set to zero, stopping the vehicle.
