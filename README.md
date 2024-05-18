@@ -47,3 +47,25 @@ Transfer these packages into your working environment and compile them using `co
 - The `autonomous-ai-model` directory contains a dataset with manual driving data and a training file for the neural network model. You are free to use these files as needed.
 - In the `detection-model` directory, you can find the training codes for the YOLOv8 model, as well as the Roboflow link for the traffic lights dataset prepared for this project.
   Feel free to utilize these resources accordingly.
+
+## Not found: NeuralNetwork issue solution
+
+Due to the incompatibility between `ROS 2` and `torch.load`, you are likely to encounter this error. 
+Therefore, after compiling the project with colcon build, paste the following code into the `install/autonomous_controller/lib/autonomous_controller/autonomous_controller.py` file. 
+This will resolve the issue.
+```
+import torch
+import torch.nn as nn
+class NeuralNetwork(nn.Module):
+    def __init__(self):
+        super(NeuralNetwork, self).__init__()
+        self.layer1 = nn.Linear(6, 32)
+        self.layer2 = nn.Linear(32, 16)
+        self.output = nn.Linear(16, 2)
+
+    def forward(self, x):
+        x = torch.relu(self.layer1(x))
+        x = torch.relu(self.layer2(x))
+        x = self.output(x)
+        return x
+```
